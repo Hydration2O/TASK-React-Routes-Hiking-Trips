@@ -13,7 +13,7 @@ function Nav() {
           to="/"
           style={({ isActive, isPending, isTransitioning }) => {
             return {
-              fontWeight: isActive ? "underline" : "",
+              textDecoration: isActive ? "underline" : "",
               color: isPending ? "red" : "black",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
@@ -30,7 +30,7 @@ function Nav() {
                 to="/"
                 style={({ isActive, isPending, isTransitioning }) => {
                   return {
-                    fontWeight: isActive ? "underline" : "",
+                    textDecoration: isActive ? "underline" : "",
                     color: isPending ? "red" : "black",
                     viewTransitionName: isTransitioning ? "slide" : "",
                   };
@@ -45,7 +45,7 @@ function Nav() {
                 to="/TripsList"
                 style={({ isActive, isPending, isTransitioning }) => {
                   return {
-                    fontWeight: isActive ? "underline" : "",
+                    textDecoration: isActive ? "underline" : "",
                     color: isPending ? "red" : "black",
                     viewTransitionName: isTransitioning ? "slide" : "",
                   };
