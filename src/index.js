@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { RouterProvider } from "react-router-dom";
+import { RouterProvider, useParams } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home";
 import TripsList from "./components/TripsList";
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/TripDetail",
+    path: "/TripDetail/details/:tripId",
     element: (
       <div>
         <Nav />
