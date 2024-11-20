@@ -30,6 +30,15 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "/Tripslist/:diff",
+    element: (
+      <div>
+        <Nav />
+        <TripsList />
+      </div>
+    ),
+  },
+  {
     path: "/TripDetail/details/:tripId",
     element: (
       <div>
